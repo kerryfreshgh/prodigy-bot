@@ -8,7 +8,8 @@ const bot = new TelegramBot(TOKEN);
 const app = express();
 app.use(express.json());
 
-const CHECKOUT = 'https://whop.com/checkout/prod_qegRTlXVjWyL6';
+const CHECKOUT = 'https://whop.com/prodigy-profits-trades/elite-trade-signals-85/';
+
 const PDF = 'https://assets-2-prod.whop.com/uploads/2026-03-30/1494cc80-c9a2-4218-af2c-7210fa1b4780/application.pdf';
 const CHANNEL = 'https://t.me/prodigyprofitstrades';
 
