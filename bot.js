@@ -82,3 +82,15 @@ app.listen(PORT, () => {
     });
   }
 });
+const COURSE_PDF = 'https://assets-2-prod.whop.com/uploads/2026-03-30/1b3c4ba1-0b0c-42e0-9e1b-af00b6c302b1/application.pdf';
+bot.onText(/\/course/, (msg) => {
+  bot.sendDocument(msg.chat.id, COURSE_PDF, {
+    caption: '📚 The Complete XAUUSD Gold Trading Course — by Prodigy Profits Trades'
+  });
+});
+bot.onText(/\/help/, (msg) => {
+  bot.sendMessage(msg.chat.id,
+    '📋 *Commands:*\n/start — Subscribe\n/activate <email> — Link email\n/guide — Trading guide\n/course — Full trading course\n/help — This message',
+    { parse_mode: 'Markdown' }
+  );
+});
